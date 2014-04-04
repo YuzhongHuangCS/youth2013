@@ -11,26 +11,30 @@
 			<span>求是青年 | 共青团浙江大学委员会</span>
 		</a>
 	</div>
-	<img src="img/banner.jpg" id="banner">
+	<img src="img/banner.jpg" onClick="location.href='index.php'" id="banner">
 
 	<div id="detail">
 		<div id="winnerList">
 			<p id="title">2013年度青年岗位能手</p>
 			<ul>
-				<li><p>淡泊明志，宁静致远</p><p>——建工学院吕朝锋教授</p></li>
-				<li><p>淡泊明志，宁静致远</p><p>——建工学院吕朝锋教授</p></li>
-				<li><p>淡泊明志，宁静致远</p><p>——建工学院吕朝锋教授</p></li>
-				<li><p>淡泊明志，宁静致远</p><p>——建工学院吕朝锋教授</p></li>
-				<li><p>淡泊明志，宁静致远</p><p>——建工学院吕朝锋教授</p></li>
-				<li><p>淡泊明志，宁静致远</p><p>——建工学院吕朝锋教授</p></li>
-			</ul>
-		</div>
-		<div id="detailBody">
-		<?php
-			require('init.php');
+			<?php
+				require('init.php');
+
+				$sql = 'SELECT id, title, subtitle FROM youth ORDER BY id';
+				$result = mysql_query($sql, $con);
+
+				$content = '';
+				while($row = mysql_fetch_assoc($result)){
+					$content .= '<li><a href="detail.php?p=' . $row['id'] . '"><p>' . $row['title'] . '</p><p>' . $row['subtitle'] . '</p></a>';
+				};
+				echo($content);
+
+echo 		'</ul>';
+echo 	'</div>';
+echo	'<div id="detailBody">';
 
 			$postID = filter_input(INPUT_GET, "p", FILTER_SANITIZE_NUMBER_INT);
-			$sql = 'SELECT id, title, subtitle, album, detail FROM youth WHERE id = ' . $postID;
+			$sql = 'SELECT title, subtitle, album, detail FROM youth WHERE id = ' . $postID;
 			$result = mysql_query($sql, $con);
 			mysql_close($con);
 			$row = mysql_fetch_assoc($result);
@@ -39,9 +43,9 @@
 			$content .= '<p class="subtitle">' . $row['subtitle'] . '</p>';
 			$content .= '<img src="' . $row['album'] . '">';
 			$content .= $row['detail'];
-			
+
 			echo($content);
-		?>
+			?>
 		</div>
 	</div>
 

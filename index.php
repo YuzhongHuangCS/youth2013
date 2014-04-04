@@ -22,7 +22,7 @@
 	<div id="gallery">
 	<?php
 		require('init.php');
-		$sql = 'SELECT id, title, subtitle, cover, summary FROM youth ORDER BY id';
+		$sql = 'SELECT title, subtitle, cover, summary FROM youth ORDER BY id';
 		$result = mysql_query($sql, $con);
 		mysql_close($con);
 		$content = '';
