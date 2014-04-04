@@ -1,8 +1,9 @@
 @import "font.css";
 @import "normalize.css";
+@wineRed: #6D1025;
 
 body{
-	background-color: #F0F0F0;
+	background-color: #F8F8F8;
 }
 #nav{
 	background-color: #EEE;
@@ -10,8 +11,11 @@ body{
 	width: 100%;
 	height: 2.5rem;
 	position: absolute;
-	#logo{
-		font-size: 1.1rem;
+	a{
+		color: #000;
+	}
+	#link{
+		font-size: 1rem;
 		line-height: 2.5rem;
 		margin-left: 15%;
 		text-decoration: none;
@@ -23,46 +27,45 @@ body{
 }
 .intro{
 	margin: 0.6rem auto;
-	padding: 1rem 1rem 0;
+	padding: 1rem 1rem;
 	width: 80%;
 	font-size: 1rem;
 	line-height: 1.5rem;
 	text-indent: 2rem;
 	background-color: #FFF;
-	border: 1px solid grey;
-	border-radius: 5px;
+	box-shadow: 1px 1px 3px rgba(0,0,0,.15);
 	.introTitle{
 		margin: 0;
 		font-size: 1.5rem;
 		font-family: serif;
-		font-weight: 400;
+		font-weight: bolder;
 		text-indent: 0;
 	}
-}
-#upIntro{
-	border-bottom: 4px solid black;
-}
-#downIntro{
-	border-top: 4px solid black;
 }
 #gallery{
 	margin: 0.6rem auto;
 	padding: 1rem 1rem;
 	width: 80%;
-	height: 800px;
 	background-color: #FFF;
-	border: 1px solid grey;
-	border-radius: 5px;
+	box-shadow: 1px 1px 3px rgba(0,0,0,.15);
 	.wrapper{
-		margin: 0 1rem;
+		padding:  0 1rem;
 		width: 30%;
-		float: left;
 		min-width: 12rem;
+		display: inline-block;
+		transition: box-shadow 0.6s;
+		&:hover{
+			box-shadow: 0 0 12px rgba(0,0,0,.2);
+		}
 		.title{
 			padding-left: 0.3rem;
-			color: #6D1025;
-			font-weight: 200;
-			border-left: 3px solid #6D1025;
+			color: @wineRed;
+			font-weight: 600;
+			border-left: 3px solid @wineRed;
+			transition: border-left 0.5s;
+			&:hover{
+				border-left: 3px solid #BA002C;
+			}
 			p{
 				margin: 0.5rem 0;
 				&:last-child{
@@ -70,22 +73,30 @@ body{
 				}
 			}
 			a{
-				color: #6D1025;
+				color: @wineRed;
 				text-decoration: none;
+				transition: color 0.5s;
 				&:hover{
-					text-decoration: underline;
+					color: #A61033;
 				}
 			}
 		}
 		img{
 			width: 100%;
-			border: 1px solid grey;
+			transition: opacity 0.5s;
+			&:hover{
+				opacity: 0.8;
+			}
 		}
 		.summary{
 			color: #666;
 			font-size: 0.8rem;
 			line-height: 1rem;
 			text-indent: 1.6rem;
+			transition: color 0.5s;
+			&:hover{
+				color: #000;
+			}
 		}
 	}
 }
@@ -94,4 +105,83 @@ body{
 	font-size: 0.9rem;
 	line-height: 0.9rem;
 	text-align: center;
+}
+#detail{
+	margin: 2rem auto;
+	width: 80%;
+}
+#winnerList{
+	float: left;
+	width: 25%;
+	background-color: #FFF;
+	box-shadow: 1px 1px 3px rgba(0,0,0,.15);
+	#title{
+		margin: 0;
+		padding: 1rem;
+		color: @wineRed;
+		background-color: #FFDA8C;
+		font-size: 1.3rem;
+		border-bottom: 1px solid #DDD;
+	}
+	ul{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	li{
+		margin: 0;
+		padding: 0.5rem 1rem;
+		color: #444;
+		border-bottom: 1px solid #DDD;
+		transition: all 0.5s;
+		p{
+			margin: 0.5rem 0 0;
+		}
+		p:last-child{
+			text-align: right;
+		}
+		&:hover{
+			background-color: #F8F8F8;
+			color: #CD8C00;
+			border-left: 10px solid #FFDA8C;
+		}
+	}
+}
+#detailBody{
+	margin-left: 27%;
+	width: 68%;
+	background-color: #FFF;
+	box-shadow: 1px 1px 3px rgba(0,0,0,.15);
+	padding: 2rem;
+	img{
+		margin-top: 1rem;
+		width: 100%;
+	}
+	.title{
+		font-size: 2rem;
+		text-align: center;
+		margin: 1rem;
+	}
+	.subtitle{
+		font-size: 1rem;
+		text-align: right;
+	}
+	.left{
+		font-size: 1.2rem;
+		font-weight: bold;
+	}
+	.middleBold{
+		margin-top: 3rem;
+		text-align: center;
+		font-size: 1.2rem;
+		font-weight: bold;
+	}
+	.middle{
+		text-indent: 2rem;
+	}
+	.right{
+		margin-top: 3rem;
+		text-align: right;
+		margin-bottom: 0;
+	}
 }

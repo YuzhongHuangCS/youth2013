@@ -7,7 +7,9 @@
 </head>
 <body>
 	<div id="nav">
-		<a href="http://www.youth.zju.edu.cn/" id="logo"><span style="color:#000">求是青年 | 共青团浙江大学委员会</span></a>
+		<a href="http://www.youth.zju.edu.cn/" id="link">
+			<span>求是青年 | 共青团浙江大学委员会</span>
+		</a>
 	</div>
 	<img src="img/banner.jpg" id="banner">
 
@@ -20,7 +22,7 @@
 	<div id="gallery">
 	<?php
 		require('init.php');
-		$sql = 'SELECT * FROM list ORDER BY id';
+		$sql = 'SELECT id, title, subtitle, cover, summary FROM youth ORDER BY id';
 		$result = mysql_query($sql, $con);
 		mysql_close($con);
 		$content = '';
@@ -33,7 +35,7 @@
 			$content .= 		'<p>' . $row['subtitle'] . '</p></a>';
 			$content .= 	'</div>';
 			$content .= 	'<hr />';
-			$content .= 	'<a href="detail.php?p=' . $row['id'] . '"><img src="' . $row['img'] . '"></a>';
+			$content .= 	'<a href="detail.php?p=' . $row['id'] . '"><img src="' . $row['cover'] . '"></a>';
 			$content .= 	'<div class="summary">';
 			$content .= 		'<p>' . $row['summary'] . '</p>';
 			$content .= 	'</div>';
@@ -54,6 +56,6 @@
 		<p>版权所有 共青团浙江大学委员会</p>
 		<p>地址：浙江大学紫金港校区小剧场B座317室 邮编：310058 电话：0571-88206671 传真：0571-88206672</p>
 	</div>
-<script src="js/jquery-2.0.3.min.js"></script>
+
 </body>
 </html>
