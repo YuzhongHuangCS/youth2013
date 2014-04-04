@@ -33,7 +33,7 @@
 
 		while($row = mysql_fetch_assoc($result)){
 			$content .= '<div class="wrapper">';
-			$content .= 	'<div class="title" href="www.sogou.com">';
+			$content .= 	'<div class="title">';
 			$content .= 		'<a href="detail.php?p=' . $row['id'] . '">'; 
 			$content .=			'<p>' . $row['title'] . '</p>';
 			$content .= 		'<p>' . $row['subtitle'] . '</p></a>';
