@@ -4,6 +4,9 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
 	<title>2013年度浙江大学青年岗位能手风采展示</title>
 	<link rel="stylesheet" href="css/style.css">
+	<!--[if lt IE 9]>
+		<script src="js/IE9.js"></script>
+	<![endif]-->
 </head>
 <body class="font-hei">
 	<div id="nav">
@@ -55,5 +58,6 @@ echo	'<div id="detailBody">';
 		<p>版权所有 共青团浙江大学委员会</p>
 		<p>地址：浙江大学紫金港校区小剧场B座317室 邮编：310058 电话：0571-88206671 传真：0571-88206672</p>
 	</div>
+
 </body>
 </html>

@@ -6,6 +6,9 @@
 	<meta name="keywords" content="2013年度浙江大学青年岗位能手, 青年岗位能手, 浙江大学青年岗位能手, 2013年度青年岗位能手,  2013年度浙江大学青年岗位能手风采展示，浙江大学团委, 求是青年, 共青团浙江大学委员会" >
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<link rel="stylesheet" href="css/style.css">
+	<!--[if lt IE 9]>
+		<script src="js/IE9.js"></script>
+	<![endif]-->
 </head>
 <body class="font-hei">
 	<div id="nav">
@@ -62,8 +65,8 @@
 		<p>版权所有 共青团浙江大学委员会</p>
 		<p>地址：浙江大学紫金港校区小剧场B座317室 邮编：310058 电话：0571-88206671 传真：0571-88206672</p>
 	</div>
-<!--[if lt IE 9]>
-<script src="js/IE9.js"></script>
-<![endif]-->
+
+<script src="js/jquery-2.0.3.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
