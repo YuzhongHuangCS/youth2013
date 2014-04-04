@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
-	<title>2013年度浙江大学“青年岗位能手”事迹展</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>2013年度浙江大学青年岗位能手风采展示</title>
 	<link rel="stylesheet" href="css/style.css"/>
 </head>
-<body>
+<body class="font-hei">
 	<div id="nav">
 		<a href="http://www.youth.zju.edu.cn/" id="link">
 			<span>求是青年 | 共青团浙江大学委员会</span>
@@ -32,8 +32,10 @@
 echo 		'</ul>';
 echo 	'</div>';
 echo	'<div id="detailBody">';
-
 			$postID = filter_input(INPUT_GET, "p", FILTER_SANITIZE_NUMBER_INT);
+			if(!$postID){
+				$postID = 1;
+			}
 			$sql = 'SELECT title, subtitle, album, detail FROM youth WHERE id = ' . $postID;
 			$result = mysql_query($sql, $con);
 			mysql_close($con);

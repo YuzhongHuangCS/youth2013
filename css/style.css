@@ -1,10 +1,14 @@
-@import "font.css";
-@import "normalize.css";
+.font-hei{font-family:"Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "Hiragino Sans GB", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif}
+.font-kai{font-family:Baskerville, Georgia, "Liberation Serif", "Kaiti SC", STKaiti, "AR PL UKai CN", "AR PL UKai HK", "AR PL UKai TW", "AR PL UKai TW MBE", "AR PL KaitiM GB", KaiTi, KaiTi_GB2312, TW\-Kai, serif}
+.font-song{font-family:Georgia, "Nimbus Roman No9 L", "Songti SC", STSong, "AR PL SungtiL GB", NSimSun, SimSun, TW\-Sung, "WenQuanYi Bitmap Song", "AR PL UMing CN", "AR PL UMing HK", "AR PL UMing TW", "AR PL UMing TW MBE", serif}
+.font-fang-song{font-family:Baskerville, "Times New Roman", "Liberation Serif", STFangsong, FangSong, FangSong_GB2312, CWTEX\-F, serif}
+.font-ming{font-family:Georgia,Nimbus Roman No9 L", "AR PL UMing CN", "AR PL UMing HK", "AR PL UMing TW", "AR PL UMing TW MBE", PMingLiU, MingLiU, serif}
 body{background-color:#f8f8f8}
-#nav{background-color:#eee;opacity:.5;width:100%;height:2.5rem;position:absolute}#nav a{color:#000}
+#nav{background-color:#fff;opacity:.5;width:100%;height:2.5rem;position:absolute}#nav a{color:#000}
 #nav #link{font-size:1rem;line-height:2.5rem;margin-left:15%;text-decoration:none}
-#banner{width:100%;min-height:8rem}
-.intro{margin:.6rem auto;padding:1rem 1rem;width:80%;font-size:1rem;line-height:1.5rem;text-indent:2rem;background-color:#fff;box-shadow:1px 1px 3px rgba(0,0,0,0.15)}.intro .introTitle{margin:0;font-size:1.5rem;font-family:serif;font-weight:bolder;text-indent:0}
+#banner{width:100%;min-height:8rem;box-shadow:1px 1px 3px rgba(0,0,0,0.15)}
+.intro{margin:.6rem auto;padding:1rem 1rem;width:80%;font-size:1rem;line-height:1.5rem;text-indent:2rem;background-color:#fff;box-shadow:1px 1px 3px rgba(0,0,0,0.15)}.intro .introWrapper{margin:0 1rem}
+.intro .introTitle{margin:0;font-size:1.5rem;font-weight:bolder;text-indent:0}
 #gallery{margin:.6rem auto;padding:1rem 1rem;width:80%;background-color:#fff;box-shadow:1px 1px 3px rgba(0,0,0,0.15)}#gallery .wrapper{padding:0 1rem;width:30%;min-width:12rem;display:inline-block;transition:box-shadow .6s}#gallery .wrapper:hover{box-shadow:0 0 12px rgba(0,0,0,0.2)}
 #gallery .wrapper .title{padding-left:.3rem;color:#6d1025;font-weight:600;border-left:3px solid #6d1025;transition:border-left .5s}#gallery .wrapper .title:hover{border-left:3px solid #ba002c}
 #gallery .wrapper .title p{margin:.5rem 0}#gallery .wrapper .title p:last-child{text-align:right}
@@ -26,3 +30,43 @@ body{background-color:#f8f8f8}
 #detailBody .middleBold{margin-top:3rem;text-align:center;font-size:1.2rem;font-weight:bold}
 #detailBody .middle{text-indent:2rem}
 #detailBody .right{margin-top:3rem;text-align:right;margin-bottom:0}
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+body{margin:0}
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}
+audio,canvas,progress,video{display:inline-block;vertical-align:baseline;}
+audio:not([controls]){display:none;height:0}
+[hidden],template{display:none}
+a{background:transparent}
+a:active,a:hover{outline:0}
+abbr[title]{border-bottom:1px dotted}
+b,strong{font-weight:bold}
+dfn{font-style:italic}
+h1{font-size:2em;margin:.67em 0}
+mark{background:#ff0;color:#000}
+small{font-size:80%}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sup{top:-0.5em}
+sub{bottom:-0.25em}
+img{border:0}
+svg:not(:root){overflow:hidden}
+figure{margin:1em 40px}
+hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}
+pre{overflow:auto}
+code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}
+button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0;}
+button{overflow:visible}
+button,select{text-transform:none}
+button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer;}
+button[disabled],html input[disabled]{cursor:default}
+button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
+input{line-height:normal}
+input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0;}
+input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}
+input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}
+input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}
+fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}
+legend{border:0;padding:0;}
+textarea{overflow:auto}
+optgroup{font-weight:bold}
+table{border-collapse:collapse;border-spacing:0}
+td,th{padding:0}
