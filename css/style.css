@@ -18,11 +18,12 @@ body{background-color:#f8f8f8}
 #footer{margin:3rem auto 1.5rem;font-size:.9rem;line-height:.9rem;text-align:center}
 #detail{margin:2rem auto;width:80%}
 #winnerList{float:left;width:18rem;background-color:#fff;box-shadow:1px 1px 3px rgba(0,0,0,0.15)}#winnerList #title{margin:0;padding:1rem;color:#6d1025;background-color:#ffda8c;font-size:1.3rem;border-bottom:1px solid #ddd}
+#winnerList #side{position:absolute;width:10px;margin-left:-10px;background-color:#ffda8c;transition:all .5s;display:none}
 #winnerList ul{list-style:none;margin:0;padding:0}
 #winnerList li{margin:0;padding:.5rem 1rem;border-bottom:1px solid #ddd;transition:all .5s}#winnerList li a{text-decoration:none}
 #winnerList li p{margin:.5rem 0 0;color:#444}
 #winnerList li p:last-child{text-align:right}
-#winnerList li:hover{background-color:#f8f8f8;color:#cd8c00;border-left:10px solid #ffda8c}
+#winnerList li:hover{background-color:#f8f8f8;color:#cd8c00}
 #detailBody{width:64%;margin-left:20rem;background-color:#fff;box-shadow:1px 1px 3px rgba(0,0,0,0.15);padding:2rem}#detailBody img{margin-top:1rem;width:100%}
 #detailBody .title{font-size:2rem;text-align:center;margin:1rem}
 #detailBody .subtitle{font-size:1rem;text-align:right}

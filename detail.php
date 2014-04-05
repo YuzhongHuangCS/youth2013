@@ -19,6 +19,7 @@
 	<div id="detail">
 		<div id="winnerList">
 			<p id="title">2013年度青年岗位能手</p>
+			<div id="side"></div>
 			<ul>
 			<?php
 				require('init.php');
@@ -59,5 +60,7 @@ echo	'<div id="detailBody">';
 		<p>地址：浙江大学紫金港校区小剧场B座317室 邮编：310058 电话：0571-88206671 传真：0571-88206672</p>
 	</div>
 
+<script src="js/jquery-2.0.3.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
