@@ -66,14 +66,16 @@ body{
 	width: 80%;
 	background-color: #FFF;
 	box-shadow: 1px 1px 3px rgba(0,0,0,.15);
-	text-align: center;
+	display: flex;
+	flex-flow: row wrap;
+	align-items: stretch;
+	justify-content: space-around;
+	align-content: stretch;
 	.wrapper{
 		padding:  0 1rem;
-		width: 30%;
-		min-width: 12rem;
-		display: inline-block;
+		min-width: 18rem;
+		flex-basis: 30%;
 		transition: box-shadow 0.6s;
-		text-align: left;
 		&:hover{
 			box-shadow: 0 0 12px rgba(0,0,0,.2);
 		}
@@ -88,60 +90,68 @@ body{
 			}
 			p{
 				margin: 0.5rem 0;
-				&:last-child{
-					text-align: right;
+					&:last-child{
+						text-align: right;
+					}
+				}
+				a{
+					color: @wineRed;
+					text-decoration: none;
+					transition: color 0.5s;
+					&:hover{
+						color: #A61033;
+					}
 				}
 			}
-			a{
-				color: @wineRed;
-				text-decoration: none;
+			img{
+				width: 100%;
+				transition: opacity 0.5s;
+				&:hover{
+					opacity: 0.8;
+				}
+			}
+			.summary{
+				color: #666;
+				font-size: 0.8rem;
+				line-height: 1rem;
+				text-indent: 1.6rem;
 				transition: color 0.5s;
 				&:hover{
-					color: #A61033;
+					color: #000;
 				}
-			}
-		}
-		img{
-			width: 100%;
-			transition: opacity 0.5s;
-			&:hover{
-				opacity: 0.8;
-			}
-		}
-		.summary{
-			color: #666;
-			font-size: 0.8rem;
-			line-height: 1rem;
-			text-indent: 1.6rem;
-			transition: color 0.5s;
-			&:hover{
-				color: #000;
 			}
 		}
 	}
-}
-#footer{
-	margin: 3rem auto 1.5rem;
-	font-size: 0.9rem;
-	line-height: 0.9rem;
-	text-align: center;
-}
-#detail{
-	margin: 2rem auto;
-	width: 80%;
-}
-#winnerList{
-	float: left;
-	width: 18rem;
-	background-color: #FFF;
-	box-shadow: 1px 1px 3px rgba(0,0,0,.15);
-	#title{
-		margin: 0;
-		padding: 1rem;
-		color: @wineRed;
-		background-color: #FFDA8C;
-		font-size: 1.3rem;
-		border-bottom: 1px solid #DDD;
+	#footer{
+		margin: 3rem auto 1.5rem;
+		font-size: 0.9rem;
+		line-height: 0.9rem;
+		text-align: center;
+	}
+	#detail{
+		margin: 2rem auto;
+		width: 80%;
+	}
+	#winnerList{
+		float: left;
+		width: 18rem;
+		background-color: #FFF;
+		box-shadow: 1px 1px 3px rgba(0,0,0,.15);
+		#title{
+			margin: 0;
+			padding: 1rem;
+			color: @wineRed;
+			background-color: #FFDA8C;
+			font-size: 1.3rem;
+			border-bottom: 1px solid #DDD;
+		}
+		#side{
+			position: absolute;
+			width: 10px;
+			margin-left: -10px;
+			background-color: #FFDA8C;
+			transition: all 0.5s;
+		display: none;
 	}
 	ul{
 		list-style: none;
@@ -166,13 +176,12 @@ body{
 		&:hover{
 			background-color: #F8F8F8;
 			color: #CD8C00;
-			border-left: 10px solid #FFDA8C;
 		}
 	}
 }
 #detailBody{
-	width: 64%;
-	margin-left: 20rem;
+	width: 65%;
+	margin-left: 19.5rem;
 	background-color: #FFF;
 	box-shadow: 1px 1px 3px rgba(0,0,0,.15);
 	padding: 2rem;
