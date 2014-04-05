@@ -9,7 +9,7 @@ body{background-color:#f8f8f8}
 #banner{width:100%;min-height:10rem;box-shadow:1px 1px 3px rgba(0,0,0,0.15)}
 .intro{margin:.6rem auto;padding:1rem 1rem;width:80%;font-size:1rem;line-height:1.5rem;text-indent:2rem;background-color:#fff;box-shadow:1px 1px 3px rgba(0,0,0,0.15)}.intro .introWrapper{margin:0 1rem}
 .intro .introTitle{margin:0;font-size:1.5rem;font-weight:bolder;text-indent:0}
-#gallery{margin:.6rem auto;padding:1rem 1rem;width:80%;background-color:#fff;box-shadow:1px 1px 3px rgba(0,0,0,0.15);display:flex;flex-flow:row wrap;align-items:stretch;justify-content:space-around;align-content:stretch}#gallery .wrapper{padding:0 1rem;min-width:18rem;flex-basis:30%;transition:box-shadow .6s}#gallery .wrapper:hover{box-shadow:0 0 12px rgba(0,0,0,0.2)}
+#gallery{margin:.6rem auto;padding:1rem 1rem;width:80%;background-color:#fff;box-shadow:1px 1px 3px rgba(0,0,0,0.15);text-align:center}#gallery .wrapper{padding:0 1rem;width:30%;min-width:12rem;display:inline-block;transition:box-shadow .6s;text-align:left}#gallery .wrapper:hover{box-shadow:0 0 12px rgba(0,0,0,0.2)}
 #gallery .wrapper .title{padding-left:.3rem;color:#6d1025;font-weight:bold;border-left:3px solid #6d1025;transition:border-left .5s}#gallery .wrapper .title:hover{border-left:3px solid #ba002c}
 #gallery .wrapper .title p{margin:.5rem 0}#gallery .wrapper .title p:last-child{text-align:right}
 #gallery .wrapper .title a{color:#6d1025;text-decoration:none;transition:color .5s}#gallery .wrapper .title a:hover{color:#a61033}
@@ -18,13 +18,12 @@ body{background-color:#f8f8f8}
 #footer{margin:3rem auto 1.5rem;font-size:.9rem;line-height:.9rem;text-align:center}
 #detail{margin:2rem auto;width:80%}
 #winnerList{float:left;width:18rem;background-color:#fff;box-shadow:1px 1px 3px rgba(0,0,0,0.15)}#winnerList #title{margin:0;padding:1rem;color:#6d1025;background-color:#ffda8c;font-size:1.3rem;border-bottom:1px solid #ddd}
-#winnerList #side{position:absolute;width:10px;margin-left:-10px;background-color:#ffda8c;transition:all .5s;display:none}
 #winnerList ul{list-style:none;margin:0;padding:0}
 #winnerList li{margin:0;padding:.5rem 1rem;border-bottom:1px solid #ddd;transition:all .5s}#winnerList li a{text-decoration:none}
 #winnerList li p{margin:.5rem 0 0;color:#444}
 #winnerList li p:last-child{text-align:right}
-#winnerList li:hover{background-color:#f8f8f8;color:#cd8c00}
-#detailBody{width:65%;margin-left:19.5rem;background-color:#fff;box-shadow:1px 1px 3px rgba(0,0,0,0.15);padding:2rem}#detailBody img{margin-top:1rem;width:100%}
+#winnerList li:hover{background-color:#f8f8f8;color:#cd8c00;border-left:10px solid #ffda8c}
+#detailBody{width:64%;margin-left:20rem;background-color:#fff;box-shadow:1px 1px 3px rgba(0,0,0,0.15);padding:2rem}#detailBody img{margin-top:1rem;width:100%}
 #detailBody .title{font-size:2rem;text-align:center;margin:1rem}
 #detailBody .subtitle{font-size:1rem;text-align:right}
 #detailBody .left{font-size:1.2rem;font-weight:bold}

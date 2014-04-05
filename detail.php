@@ -3,7 +3,6 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
 	<title>2013年度浙江大学青年岗位能手风采展示</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<link rel="stylesheet" href="css/style.css">
 	<!--[if lt IE 9]>
 		<script src="js/IE9.js"></script>
@@ -20,7 +19,6 @@
 	<div id="detail">
 		<div id="winnerList">
 			<p id="title">2013年度青年岗位能手</p>
-			<div id="side"></div>
 			<ul>
 			<?php
 				require('init.php');
@@ -34,10 +32,9 @@
 				};
 				echo($content);
 
-			echo '</ul>';
-			echo '</div>';
-			echo'<div id="detailBody">';
-
+echo 		'</ul>';
+echo 	'</div>';
+echo	'<div id="detailBody">';
 			$postID = filter_input(INPUT_GET, "p", FILTER_SANITIZE_NUMBER_INT);
 			if(!$postID){
 				$postID = 1;
@@ -62,7 +59,5 @@
 		<p>地址：浙江大学紫金港校区小剧场B座317室 邮编：310058 电话：0571-88206671 传真：0571-88206672</p>
 	</div>
 
-<script src="js/jquery-2.0.3.min.js"></script>
-<script src="js/script.js"></script>
 </body>
 </html>

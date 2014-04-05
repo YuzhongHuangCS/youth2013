@@ -66,5 +66,7 @@
 		<p>地址：浙江大学紫金港校区小剧场B座317室 邮编：310058 电话：0571-88206671 传真：0571-88206672</p>
 	</div>
 
+<script src="js/jquery-2.0.3.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
