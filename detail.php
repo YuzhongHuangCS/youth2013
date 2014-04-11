@@ -35,7 +35,7 @@
 
 echo 		'</ul>';
 echo 	'</div>';
-echo	'<div id="detailBody">';
+echo	'<div id="detailBody" class="font-song">';
 			$postID = filter_input(INPUT_GET, "p", FILTER_SANITIZE_NUMBER_INT);
 			if(!$postID){
 				$postID = 1;
@@ -45,8 +45,8 @@ echo	'<div id="detailBody">';
 			mysql_close($con);
 			$row = mysql_fetch_assoc($result);
 
-			$content  = '<p class="title">' . $row['title'] . '</p>';
-			$content .= '<p class="subtitle">' . $row['subtitle'] . '</p>';
+			$content  = '<p class="title font-hei">' . $row['title'] . '</p>';
+			$content .= '<p class="subtitle font-hei">' . $row['subtitle'] . '</p>';
 			$content .= '<img src="' . $row['album'] . '">';
 			$content .= $row['detail'];
 

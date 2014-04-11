@@ -29,7 +29,7 @@
 	<table id="gallery">
 	<?php
 		require('init.php');
-		$sql = 'SELECT id, title, subtitle, cover, summary FROM youth ORDER BY id';
+		$sql = 'SELECT id, title, subtitle, cover, summary FROM youth ORDER BY id LIMIT 10';
 		$result = mysql_query($sql, $con);
 		mysql_close($con);
 		$content = '';
@@ -57,7 +57,11 @@
 			}
 			$currentColumn++;
 		};
-
+		$content .= '<td colspan="2" class="wrapper" id="more">';
+		$content .= 		'<a href="detail.php?p=31"><p>全部31位“青年岗位能手”名单</p></a>';
+		$content .= 		'<a href="detail.php?p=31"><div class="imgWrapper"><img src="img/right.png"></div></a>';
+		$content .= '</td>';
+		$content .= '</tr>';
 		echo($content);
 	?>	
 	</table>
@@ -75,7 +79,5 @@
 		<p>地址：浙江大学紫金港校区小剧场B座317室 邮编：310058 电话：0571-88206671 传真：0571-88206672</p>
 	</div>
 
-<script src="js/jquery-2.0.3.min.js"></script>
-<script src="js/script.js"></script>
 </body>
 </html>

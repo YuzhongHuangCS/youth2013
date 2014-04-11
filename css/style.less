@@ -42,7 +42,7 @@ body{
 	box-shadow: 1px 1px 3px rgba(0,0,0,.15);
 }
 .intro{
-	margin: 0.6rem auto;
+	margin: 1.2rem auto;
 	padding: 1rem 1rem;
 	width: 80%;
 	font-size: 1rem;
@@ -69,7 +69,7 @@ body{
 	box-shadow: 1px 1px 3px rgba(0,0,0,.15);
 	.wrapper{
 		padding:  0 1rem;
-		width: 30%;
+		width: 33%;
 		transition: box-shadow 0.6s;
 		&:hover{
 			box-shadow: 0 0 12px rgba(0,0,0,.2);
@@ -108,13 +108,28 @@ body{
 		.summary{
 			color: #666;
 			font-size: 0.8rem;
-			line-height: 1rem;
+			line-height: 1.2rem;
 			text-indent: 1.6rem;
 			transition: color 0.5s;
 			&:hover{
 				color: #000;
 			}
 		}
+	}
+}
+#more{
+	text-align: center;
+	a{
+		text-decoration: none;
+		p{
+			font-size: 1.6rem;
+			color: @wineRed;
+			line-height: 1rem;
+		}
+	}
+	.imgWrapper{
+		width: 2.2rem;
+		margin: 0 auto;
 	}
 }
 #footer{
@@ -129,7 +144,7 @@ body{
 }
 #winnerList{
 	float: left;
-	width: 18rem;
+	width: 19rem;
 	background-color: #FFF;
 	box-shadow: 1px 1px 3px rgba(0,0,0,.15);
 	#title{
@@ -176,10 +191,11 @@ body{
 }
 #detailBody{
 	width: 64%;
-	margin-left: 20rem;
+	margin-left: 21rem;
 	background-color: #FFF;
 	box-shadow: 1px 1px 3px rgba(0,0,0,.15);
 	padding: 2rem;
+	line-height: 1.5rem;
 	img{
 		margin-top: 1rem;
 		width: 100%;
@@ -195,7 +211,7 @@ body{
 	}
 	.left{
 		font-size: 1.2rem;
-		font-weight: bold;
+		font-weight: bolder;
 	}
 	.middleBold{
 		margin-top: 3rem;
@@ -620,20 +636,4 @@ textarea {
 
 optgroup {
   font-weight: bold;
-}
-
-/* Tables
-   ========================================================================== */
-
-/**
- * Remove most spacing between table cells.
- */
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-td,th {
-  padding: 0;
 }
