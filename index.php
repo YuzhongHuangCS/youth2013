@@ -26,16 +26,20 @@
 		</div>
 	</div>
 
-	<div id="gallery">
+	<table id="gallery">
 	<?php
 		require('init.php');
 		$sql = 'SELECT id, title, subtitle, cover, summary FROM youth ORDER BY id';
 		$result = mysql_query($sql, $con);
 		mysql_close($con);
 		$content = '';
+		$currentColumn = 1;
 
 		while($row = mysql_fetch_assoc($result)){
-			$content .= '<div class="wrapper">';
+			if($currentColumn == 1){
+				$content .= '<tr>';
+			}
+			$content .= '<td class="wrapper">';
 			$content .= 	'<div class="title">';
 			$content .= 		'<a href="detail.php?p=' . $row['id'] . '">'; 
 			$content .=			'<p>' . $row['title'] . '</p>';
@@ -46,18 +50,23 @@
 			$content .= 	'<div class="summary">';
 			$content .= 		'<p>' . $row['summary'] . '</p>';
 			$content .= 	'</div>';
-			$content .= '</div>';
+			$content .= '</td>';
+			if($currentColumn == 3){
+				$content .= '</tr>';
+				$currentColumn = 0;
+			}
+			$currentColumn++;
 		};
 
 		echo($content);
 	?>	
-	</div>
+	</table>
 
 	<div class="intro" id="downIntro">
 		<div class="introWrapper">
 			<p class="introTitle font-song">结语</p>
 			<hr />
-			<p>时光荏苒，光阴匆匆。挥手告别过去的成就，在未来的路上我们还会越走越宽广，因为我们有着这样优秀的“青春榜样”！奋斗抒写无悔人生，青春描绘中国梦想，奋斗的青春最美丽！</p>
+			<p>时光荏苒，光阴匆匆。挥手告别过去的成就，在未来的路上我们还会越走越宽广，因为我们有着这样优秀的“青春榜样”！奋斗抒写精彩人生，青春描绘伟大梦想，奋斗的青春最美丽！</p>
 		</div>
 	</div>
 

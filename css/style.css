@@ -9,7 +9,7 @@ body{background-color:#f8f8f8}
 #banner{width:100%;min-height:10rem;box-shadow:1px 1px 3px rgba(0,0,0,0.15)}
 .intro{margin:.6rem auto;padding:1rem 1rem;width:80%;font-size:1rem;line-height:1.5rem;text-indent:2rem;background-color:#fff;box-shadow:1px 1px 3px rgba(0,0,0,0.15)}.intro .introWrapper{margin:0 1rem}
 .intro .introTitle{margin:0;font-size:1.5rem;font-weight:bolder;text-indent:0}
-#gallery{margin:.6rem auto;padding:1rem 1rem;width:80%;background-color:#fff;box-shadow:1px 1px 3px rgba(0,0,0,0.15);text-align:center}#gallery .wrapper{padding:0 1rem;width:30%;min-width:12rem;display:inline-block;transition:box-shadow .6s;text-align:left}#gallery .wrapper:hover{box-shadow:0 0 12px rgba(0,0,0,0.2)}
+#gallery{display:block;margin:1.5rem auto;padding:1rem 1rem;width:80%;background-color:#fff;box-shadow:1px 1px 3px rgba(0,0,0,0.15)}#gallery .wrapper{padding:0 1rem;width:30%;transition:box-shadow .6s}#gallery .wrapper:hover{box-shadow:0 0 12px rgba(0,0,0,0.2)}
 #gallery .wrapper .title{padding-left:.3rem;color:#6d1025;font-weight:bold;border-left:3px solid #6d1025;transition:border-left .5s}#gallery .wrapper .title:hover{border-left:3px solid #ba002c}
 #gallery .wrapper .title p{margin:.5rem 0}#gallery .wrapper .title p:last-child{text-align:right}
 #gallery .wrapper .title a{color:#6d1025;text-decoration:none;transition:color .5s}#gallery .wrapper .title a:hover{color:#a61033}
