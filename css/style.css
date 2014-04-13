@@ -4,19 +4,19 @@
 .font-fang-song{font-family:Baskerville, "Times New Roman", "Liberation Serif", STFangsong, FangSong, FangSong_GB2312, CWTEX\-F, serif}
 .font-ming{font-family:Georgia, "Nimbus Roman No9 L", "AR PL UMing CN", "AR PL UMing HK", "AR PL UMing TW", "AR PL UMing TW MBE", PMingLiU, MingLiU, serif}
 body{background-color:#f8f8f8}
-#nav{background-color:#fff;opacity:.5;width:100%;height:2.5rem;position:absolute}#nav a{color:#000}
-#nav #link{font-size:1rem;line-height:2.5rem;margin-left:15%;text-decoration:none}
+#nav{background-color:#fff;opacity:.5;width:100%;height:2.4rem;position:absolute}#nav a{color:#000}
+#nav #link{font-size:1rem;line-height:2.5rem;margin-left:12%;text-decoration:none}
 #banner{width:100%;min-height:10rem;box-shadow:1px 1px 3px rgba(0,0,0,0.15)}
 .intro{margin:1.2rem auto;padding:1rem 1rem;width:80%;font-size:1rem;line-height:1.5rem;text-indent:2rem;background-color:#fff;box-shadow:1px 1px 3px rgba(0,0,0,0.15)}.intro .introWrapper{margin:0 1rem}
 .intro .introTitle{margin:0;font-size:1.5rem;font-weight:bolder;text-indent:0}
 #gallery{display:block;margin:1.5rem auto;padding:1rem 1rem;width:80%;background-color:#fff;box-shadow:1px 1px 3px rgba(0,0,0,0.15)}#gallery .wrapper{padding:0 1rem;width:33%;transition:box-shadow .6s}#gallery .wrapper:hover{box-shadow:0 0 12px rgba(0,0,0,0.2)}
 #gallery .wrapper .title{padding-left:.3rem;color:#6d1025;font-weight:bold;border-left:3px solid #6d1025;transition:border-left .5s}#gallery .wrapper .title:hover{border-left:3px solid #ba002c}
-#gallery .wrapper .title p{margin:.5rem 0}#gallery .wrapper .title p:last-child{text-align:right}
+#gallery .wrapper .title p{margin:.5rem 0}#gallery .wrapper .title p:last-child{text-align:right;font-size:.9rem}
 #gallery .wrapper .title a{color:#6d1025;text-decoration:none;transition:color .5s}#gallery .wrapper .title a:hover{color:#a61033}
 #gallery .wrapper img{width:100%;transition:opacity .5s}#gallery .wrapper img:hover{opacity:.8}
-#gallery .wrapper .summary{color:#666;font-size:.8rem;line-height:1.2rem;text-indent:1.6rem;transition:color .5s}#gallery .wrapper .summary:hover{color:#000}
-#more{text-align:center}#more a{text-decoration:none}#more a p{font-size:1.6rem;color:#6d1025;line-height:1rem}
-#more .imgWrapper{width:2.2rem;margin:0 auto}
+#gallery .wrapper .summary{color:#333;font-size:.8rem;line-height:1.2rem;text-indent:1.6rem;transition:color .5s}#gallery .wrapper .summary:hover{color:#000}
+#more{text-align:center}#more a{text-decoration:none}#more a p{font-size:1.8rem;color:#6d1025;line-height:1rem}
+#more #imgWrapper{width:2.4rem;margin:0 auto}
 #footer{margin:3rem auto 1.5rem;font-size:.9rem;line-height:.9rem;text-align:center}
 #detail{margin:2rem auto;width:80%}
 #winnerList{float:left;width:19rem;background-color:#fff;box-shadow:1px 1px 3px rgba(0,0,0,0.15)}#winnerList #title{margin:0;padding:1rem;color:#6d1025;background-color:#ffda8c;font-size:1.3rem;border-bottom:1px solid #ddd}
@@ -24,7 +24,7 @@ body{background-color:#f8f8f8}
 #winnerList ul{list-style:none;margin:0;padding:0}
 #winnerList li{margin:0;padding:.5rem 1rem;border-bottom:1px solid #ddd;transition:all .5s}#winnerList li a{text-decoration:none}
 #winnerList li p{margin:.5rem 0 0;color:#444}
-#winnerList li p:last-child{text-align:right}
+#winnerList li p:last-child{text-align:right;font-size:.9rem}
 #winnerList li:hover{background-color:#f8f8f8;color:#cd8c00}
 #detailBody{width:64%;margin-left:21rem;background-color:#fff;box-shadow:1px 1px 3px rgba(0,0,0,0.15);padding:2rem;line-height:1.5rem}#detailBody img{margin-top:1rem;width:100%}
 #detailBody .title{font-size:2rem;text-align:center;margin:1rem}
@@ -33,6 +33,8 @@ body{background-color:#f8f8f8}
 #detailBody .middleBold{margin-top:3rem;text-align:center;font-size:1.2rem;font-weight:bold}
 #detailBody .middle{text-indent:2rem}
 #detailBody .right{margin-top:3rem;text-align:right;margin-bottom:0}
+#detailBody table{margin:0 auto;color:#333;border-width:1px;border-color:#666;border-collapse:collapse}#detailBody table th{border-width:1px;padding:8px;border-style:solid;border-color:#666;background-color:#dedede}
+#detailBody table td{border-width:1px;padding:1rem 2rem;border-style:solid;border-color:#666;background-color:#fff}
 html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
 body{margin:0}
 article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}

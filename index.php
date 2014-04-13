@@ -10,8 +10,8 @@
 		<script src="js/IE9.js"></script>
 	<![endif]-->
 </head>
-<body class="font-hei">
-	<div id="nav">
+<body class="font-song">
+	<div id="nav" class="font-hei">
 		<a href="http://www.youth.zju.edu.cn/" id="link">
 			<span>求是青年 | 共青团浙江大学委员会</span>
 		</a>
@@ -59,7 +59,7 @@
 		};
 		$content .= '<td colspan="2" class="wrapper" id="more">';
 		$content .= 		'<a href="detail.php?p=31"><p>全部31位“青年岗位能手”名单</p></a>';
-		$content .= 		'<a href="detail.php?p=31"><div class="imgWrapper"><img src="img/right.png"></div></a>';
+		$content .= 		'<a href="detail.php?p=31"><div id="imgWrapper"><img src="img/right.png"></div></a>';
 		$content .= '</td>';
 		$content .= '</tr>';
 		echo($content);
