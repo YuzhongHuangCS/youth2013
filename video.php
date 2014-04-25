@@ -21,22 +21,34 @@
 			$videoID = 1;
 		}
 		
+		$videos = array();
+		$videos[1] = array(
+			'title'		=> '以联络促发展，以尝试善自我',
+			'subtitle'	=> '——记发展联络办公室鲁小双老师',
+			'file'		=> 'http://youth2013-video.stor.sinaapp.com/lu.mp4',
+			'image' 	=> 'img/cover7.jpg'
+		);
+		$videos[2] = array(
+			'title'		=> '“做病人眼中最好的自己”',
+			'subtitle'	=> '——记校医院詹慧芳护士',
+			'file'		=> 'http://youth2013-video.stor.sinaapp.com/zhan.mp4',
+			'image' 	=> 'img/cover9.jpg'
+		);
+
 		$content = '
 		<div id="detail">
 			<div id="winnerList">
 				<p id="title">2013年度十佳青年岗位能手采访纪实</p>
 				<div id="side"></div>
-				<ul>
-					<a href="video.php?v=1"><li><p>以联络促发展，以尝试善自我</p><p>——记发展联络办公室鲁小双老师</p></li></a>
-					<a href="video.php?v=2"><li><p>“做病人眼中最好的自己”</p><p>——记校医院詹慧芳护士</p></li></a>
+				<ul>';
+				foreach ($videos as $key => $value) {
+					$content .= '<a href="video.php?v=' . $key . '"><li><p>' . $value['title'] . '</p><p>' . $value['subtitle'] . '</p></li></a>';
+				}
+				$content .='
 				</ul>
 			</div>
 			<div id="detailBody">';
-				if($videoID == 1){
-					$content .= '<p class="title">以联络促发展，以尝试善自我</p><p class="subtitle">——记发展联络办公室鲁小双老师</p>';
-				} else{
-					$content .= '<p class="title">“做病人眼中最好的自己”</p><p class="subtitle">——记校医院詹慧芳护士</p>';
-				};
+				$content .= '<p class="title">' . $videos[$videoID]['title'] . '</p><p class="subtitle">' . $videos[$videoID]['subtitle'] . '</p>';
 				$content .='
 				<div id="jwvideo">正在加载视频...</div>
 			</div>
@@ -45,8 +57,8 @@
 	$content .=
 	'<script>
 		jwplayer("jwvideo").setup({
-        file: "video/' . $videoID . '.webm",
-        image: "video/' . $videoID . '.jpg",
+        file: "' . $videos[$videoID]['file'] . '",
+        image: "' . $videos[$videoID]['image'] . '",
         height: 576,
         width: 720
     });
