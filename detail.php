@@ -3,6 +3,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
 	<title>2013年度浙江大学青年岗位能手风采展示</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<link rel="stylesheet" href="css/style.css">
 	<!--[if lt IE 9]>
 		<script src="js/IE9.js"></script>
@@ -18,17 +19,18 @@
 
 	<div id="detail">
 		<div id="winnerList">
-			<p id="title">2013年度青年岗位能手</p>
+			<p id="title">2013年度十佳青年岗位能手</p>
 			<div id="side"></div>
 			<ul>
 			<?php
-				require('init.php');
+				$postID = filter_input(INPUT_GET, "p", FILTER_SANITIZE_NUMBER_INT);
+				require('php/init.php');
 
 				$sql = 'SELECT id, title, subtitle FROM youth ORDER BY id';
-				$result = mysql_query($sql, $con);
+				$result=$conn->query($sql);
 
 				$content = '';
-				while($row = mysql_fetch_assoc($result)){
+				while($row = $result->fetch_assoc()){
 					$content .= '<li><a href="detail.php?p=' . $row['id'] . '"><p>' . $row['title'] . '</p><p>' . $row['subtitle'] . '</p></a>';
 				};
 				echo($content);
@@ -36,21 +38,23 @@
 echo 		'</ul>';
 echo 	'</div>';
 echo	'<div id="detailBody" class="font-song">';
-			$postID = filter_input(INPUT_GET, "p", FILTER_SANITIZE_NUMBER_INT);
-			if(!$postID){
-				$postID = 1;
-			}
-			$sql = 'SELECT title, subtitle, album, detail FROM youth WHERE id = ' . $postID;
-			$result = mysql_query($sql, $con);
-			mysql_close($con);
-			$row = mysql_fetch_assoc($result);
 
-			$content  = '<p class="title font-hei">' . $row['title'] . '</p>';
-			$content .= '<p class="subtitle font-hei">' . $row['subtitle'] . '</p>';
-			$content .= '<img src="' . $row['album'] . '">';
-			$content .= $row['detail'];
+				if(!$postID){
+					$postID = 1;
+				}
+				$sql = 'SELECT title, subtitle, album, detail FROM youth WHERE id = ' . $postID;
+				$result=$conn->query($sql);
 
-			echo($content);
+				$row = $result->fetch_assoc();
+				$row['subtitle'] = explode(']', $row['subtitle']);
+				$row['subtitle'] = '——记' . $row['subtitle'][1];
+
+				$content  = '<p class="title font-hei">' . $row['title'] . '</p>';
+				$content .= '<p class="subtitle font-hei">' . $row['subtitle'] . '</p>';
+				$content .= '<img src="' . $row['album'] . '">';
+				$content .= $row['detail'];
+
+				echo($content);
 			?>
 		</div>
 	</div>
