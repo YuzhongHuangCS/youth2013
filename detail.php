@@ -10,12 +10,9 @@
 	<![endif]-->
 </head>
 <body class="font-hei">
-	<div id="nav">
-		<a href="http://www.youth.zju.edu.cn/" id="link">
-			<span>求是青年 | 共青团浙江大学委员会</span>
-		</a>
-	</div>
-	<img src="img/banner.jpg" onClick="location.href='index.php'" id="banner">
+	<?php
+		require('php/banner.php');
+	?>
 
 	<div id="detail">
 		<div id="winnerList">
@@ -31,7 +28,7 @@
 
 				$content = '';
 				while($row = $result->fetch_assoc()){
-					$content .= '<li><a href="detail.php?p=' . $row['id'] . '"><p>' . $row['title'] . '</p><p>' . $row['subtitle'] . '</p></a>';
+					$content .= '<li><a href="detail.php?p=' . $row['id'] . '"><p>' . $row['title'] . '</p><p>' . $row['subtitle'] . '</p></a></li>';
 				};
 				echo($content);
 
@@ -51,7 +48,7 @@ echo	'<div id="detailBody" class="font-song">';
 
 				$content  = '<p class="title font-hei">' . $row['title'] . '</p>';
 				$content .= '<p class="subtitle font-hei">' . $row['subtitle'] . '</p>';
-				$content .= '<img src="' . $row['album'] . '">';
+				$content .= '<img class="album" src="' . $row['album'] . '">';
 				$content .= $row['detail'];
 
 				echo($content);
@@ -59,12 +56,10 @@ echo	'<div id="detailBody" class="font-song">';
 		</div>
 	</div>
 
-	<div id="footer">
-		<p>版权所有 共青团浙江大学委员会</p>
-		<p>地址：浙江大学紫金港校区小剧场B座317室 邮编：310058 电话：0571-88206671 传真：0571-88206672</p>
-	</div>
-
-<script src="js/jquery-2.0.3.min.js"></script>
+<?php
+	require('php/footer.php');
+?>
+<script src="js/jquery-1.11.0.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

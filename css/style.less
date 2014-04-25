@@ -59,6 +59,10 @@ body{
 		font-weight: bolder;
 		text-indent: 0;
 	}
+	#videoLink{
+		color: @wineRed;
+		text-decoration: none;
+	}
 }
 #gallery{
 	display: block;
@@ -146,17 +150,19 @@ body{
 }
 #footer{
 	margin: 3rem auto 1.5rem;
+	padding: 0 2rem;
 	font-size: 0.9rem;
 	line-height: 0.9rem;
 	text-align: center;
 }
 #detail{
 	margin: 2rem auto;
-	width: 80%;
 }
 #winnerList{
-	float: left;
-	width: 30%;
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 8%;
+	width: 24%;
 	background-color: #FFF;
 	box-shadow: 1px 1px 3px rgba(0,0,0,.15);
 	#title{
@@ -175,6 +181,9 @@ body{
 		transition: all 0.5s;
 		display: none;
 	}
+	a{
+		text-decoration: none;
+	}
 	ul{
 		list-style: none;
 		margin: 0;
@@ -185,9 +194,6 @@ body{
 		padding: 0.5rem 1rem;
 		border-bottom: 1px solid #DDD;
 		transition: all 0.5s;
-		a{
-			text-decoration: none;
-		}
 		p{
 			margin: 0.5rem 0 0;
 			color: #444;
@@ -203,13 +209,15 @@ body{
 	}
 }
 #detailBody{
-	width: 64%;
-	margin-left: 32%;
+	vertical-align: top;
+	display: inline-block;
+	width: 55%;
+	margin-left: 2%;
+	padding: 2rem;
 	background-color: #FFF;
 	box-shadow: 1px 1px 3px rgba(0,0,0,.15);
-	padding: 2rem;
 	line-height: 1.5rem;
-	img{
+	img.album{
 		margin-top: 1rem;
 		width: 100%;
 	}
@@ -240,29 +248,7 @@ body{
 		text-align: right;
 		margin-bottom: 0;
 	}
-	table{
-			margin: 0 auto;
-			color: #333;
-			border-width: 1px;
-			border-color: #666;
-			border-collapse: collapse;
-		th {
-			border-width: 1px;
-			padding: 8px;
-			border-style: solid;
-			border-color: #666;
-			background-color: #dedede;
-		}
-		td {
-			border-width: 1px;
-			padding: 1rem 2rem;
-			border-style: solid;
-			border-color: #666;
-			background-color: #fff;
-		}
-	}
 }
-
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 
 /**

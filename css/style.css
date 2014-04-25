@@ -9,6 +9,7 @@ body{background-color:#f8f8f8}
 #banner{width:100%;min-height:10rem;box-shadow:1px 1px 3px rgba(0,0,0,0.15)}
 .intro{margin:1.2rem auto;padding:1rem 1rem;width:80%;font-size:1rem;line-height:1.5rem;text-indent:2rem;background-color:#fff;box-shadow:1px 1px 3px rgba(0,0,0,0.15)}.intro .introWrapper{margin:0 1rem}
 .intro .introTitle{margin:0;font-size:1.5rem;font-weight:bolder;text-indent:0}
+.intro #videoLink{color:#6d1025;text-decoration:none}
 #gallery{display:block;margin:1.5rem auto;padding:1rem 1rem;width:80%;background-color:#fff;box-shadow:1px 1px 3px rgba(0,0,0,0.15)}#gallery .wrapper{padding:0 1rem;width:33%;transition:box-shadow .6s}#gallery .wrapper:hover{box-shadow:0 0 12px rgba(0,0,0,0.2)}
 #gallery .wrapper .title{padding-left:.3rem;color:#6d1025;font-weight:bold;border-left:3px solid #6d1025;transition:border-left .5s}#gallery .wrapper .title:hover{border-left:3px solid #ba002c}
 #gallery .wrapper .title p{margin:.5rem 0}#gallery .wrapper .title p:last-child{text-align:right;font-size:.9rem}
@@ -19,24 +20,22 @@ body{background-color:#f8f8f8}
 #more td{padding:.2rem 0}
 #more #add{margin:0 auto;padding-left:2.2rem;width:90%;text-align:left}
 #more #imgWrapper{float:right;margin-top:-3.2rem;margin-right:5.5rem;width:3rem}
-#footer{margin:3rem auto 1.5rem;font-size:.9rem;line-height:.9rem;text-align:center}
-#detail{margin:2rem auto;width:80%}
-#winnerList{float:left;width:30%;background-color:#fff;box-shadow:1px 1px 3px rgba(0,0,0,0.15)}#winnerList #title{margin:0;padding:1rem;color:#6d1025;background-color:#ffda8c;font-size:1.3rem;border-bottom:1px solid #ddd}
+#footer{margin:3rem auto 1.5rem;padding:0 2rem;font-size:.9rem;line-height:.9rem;text-align:center}
+#detail{margin:2rem auto}
+#winnerList{display:inline-block;vertical-align:top;margin-left:8%;width:24%;background-color:#fff;box-shadow:1px 1px 3px rgba(0,0,0,0.15)}#winnerList #title{margin:0;padding:1rem;color:#6d1025;background-color:#ffda8c;font-size:1.3rem;border-bottom:1px solid #ddd}
 #winnerList #side{position:absolute;width:10px;margin-left:-10px;background-color:#ffda8c;transition:all .5s;display:none}
+#winnerList a{text-decoration:none}
 #winnerList ul{list-style:none;margin:0;padding:0}
-#winnerList li{margin:0;padding:.5rem 1rem;border-bottom:1px solid #ddd;transition:all .5s}#winnerList li a{text-decoration:none}
-#winnerList li p{margin:.5rem 0 0;color:#444}
+#winnerList li{margin:0;padding:.5rem 1rem;border-bottom:1px solid #ddd;transition:all .5s}#winnerList li p{margin:.5rem 0 0;color:#444}
 #winnerList li p:last-child{text-align:right;font-size:.9rem}
 #winnerList li:hover{background-color:#f8f8f8;color:#cd8c00}
-#detailBody{width:64%;margin-left:32%;background-color:#fff;box-shadow:1px 1px 3px rgba(0,0,0,0.15);padding:2rem;line-height:1.5rem}#detailBody img{margin-top:1rem;width:100%}
+#detailBody{vertical-align:top;display:inline-block;width:55%;margin-left:2%;padding:2rem;background-color:#fff;box-shadow:1px 1px 3px rgba(0,0,0,0.15);line-height:1.5rem}#detailBody img.album{margin-top:1rem;width:100%}
 #detailBody .title{font-size:2rem;text-align:center;margin:1rem}
 #detailBody .subtitle{font-size:1rem;text-align:right}
 #detailBody .left{font-size:1.2rem;font-weight:bolder}
 #detailBody .middleBold{margin-top:3rem;text-align:center;font-size:1.2rem;font-weight:bold}
 #detailBody .middle{text-indent:2rem}
 #detailBody .right{margin-top:3rem;text-align:right;margin-bottom:0}
-#detailBody table{margin:0 auto;color:#333;border-width:1px;border-color:#666;border-collapse:collapse}#detailBody table th{border-width:1px;padding:8px;border-style:solid;border-color:#666;background-color:#dedede}
-#detailBody table td{border-width:1px;padding:1rem 2rem;border-style:solid;border-color:#666;background-color:#fff}
 html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
 body{margin:0}
 article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}

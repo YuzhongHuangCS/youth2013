@@ -11,18 +11,15 @@
 	<![endif]-->
 </head>
 <body class="font-song">
-	<div id="nav" class="font-hei">
-		<a href="http://www.youth.zju.edu.cn/" id="link">
-			<span>求是青年 | 共青团浙江大学委员会</span>
-		</a>
-	</div>
-	<img src="img/banner.jpg" id="banner">
+	<?php
+		require('php/banner.php');
+	?>
 
 	<div class="intro" id="upIntro">
 		<div class="introWrapper">
 			<p class="introTitle font-song">导语</p>
 			<hr />
-			<p>青春不息，追求不止。青年岗位能手评选活动，自11月下旬启动，经过广泛发动、逐级推荐、组织评选、网上公示等环节，从各基层团组织、工会组织的申报人员中最终产生了十位在学校教学科研、党政管理、后勤服务与医疗卫生等岗位表现突出的一线教职员工。他们立足本职岗位发挥生力军作用，他们甘于奉献、兢兢业业，在浙大建设世界一流大学的进程中贡献着最美的青春力量！</p>
+			<p>青春不息，追求不止。青年岗位能手评选活动，自11月下旬启动，经过广泛发动、逐级推荐、组织评选、网上公示等环节，从各基层团组织、工会组织的申报人员中最终产生了十位在学校教学科研、党政管理、后勤服务与医疗卫生等岗位表现突出的一线教职员工。他们立足本职岗位发挥生力军作用，他们甘于奉献、兢兢业业，在浙大建设世界一流大学的进程中贡献着最美的青春力量！ <a href="video.php" id="videoLink">[视频]</a></p>
 		</div>
 	</div>
 
@@ -75,10 +72,8 @@
 		</div>
 	</div>
 
-	<div id="footer">
-		<p>版权所有 共青团浙江大学委员会</p>
-		<p>地址：浙江大学紫金港校区小剧场B座317室 邮编：310058 电话：0571-88206671 传真：0571-88206672</p>
-	</div>
-
+<?php
+	require('php/footer.php');
+?>
 </body>
 </html>
