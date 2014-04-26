@@ -43,7 +43,7 @@ body{
 }
 .intro{
 	margin: 1.2rem auto;
-	padding: 1rem 1rem;
+	padding: 1rem;
 	width: 80%;
 	font-size: 1rem;
 	line-height: 1.5rem;
@@ -59,16 +59,11 @@ body{
 		font-weight: bolder;
 		text-indent: 0;
 	}
-	#videoLink{
-		color: @wineRed;
-		font-weight: bold;
-		text-decoration: none;
-	}
 }
 #gallery{
 	display: block;
 	margin: 1.5rem auto;
-	padding: 1rem 1rem;
+	padding: 1rem;
 	width: 80%;
 	background-color: #FFF;
 	box-shadow: 1px 1px 3px rgba(0,0,0,.15);
@@ -121,6 +116,11 @@ body{
 				color: #000;
 			}
 		}
+		.videoLink{
+			color: @wineRed;
+			font-weight: bold;
+			text-decoration: none;
+		}
 	}
 }
 #more{
@@ -144,8 +144,8 @@ body{
 	}
 	#imgWrapper{
 		float: right;
-		margin-top: -3.2rem;
-		margin-right: 5.5rem;
+		margin-top: -3.4rem;
+		margin-right: 5.7rem;
 		width: 3rem;
 	}
 }
@@ -661,4 +661,24 @@ textarea {
 
 optgroup {
   font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+td,
+th {
+  padding: 0;
 }
