@@ -5,14 +5,15 @@
 	<title>2013年度浙江大学“青年岗位能手”事迹展</title>
 	<meta name="keywords" content="2013年度浙江大学青年岗位能手, 视频" >
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-	<link rel="stylesheet" href="css/style.css">
 	<!--[if lt IE 9]>
 		<script src="js/IE9.js"></script>
+		<script src="js/PIE.js"></script>
 	<![endif]-->
+	<link rel="stylesheet" href="css/style.css">
 	<script src="jwplayer/jwplayer.js"></script>
 	<script>jwplayer.key="JP1TQQO7k/D2GehXErMBy4/PDqp9JqxfkW5bIA==";</script>
 </head>
-<body class="font-hei">
+<body class="font-hei" onload="winnerListControl()">
 	<?php
 		require('php/banner.php');
 		

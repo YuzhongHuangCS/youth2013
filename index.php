@@ -5,10 +5,11 @@
 	<title>2013年度浙江大学“青年岗位能手”事迹展</title>
 	<meta name="keywords" content="2013年度浙江大学青年岗位能手, 青年岗位能手, 浙江大学青年岗位能手, 2013年度青年岗位能手,  2013年度浙江大学青年岗位能手风采展示，浙江大学团委, 求是青年, 共青团浙江大学委员会" >
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-	<link rel="stylesheet" href="css/style.css">
 	<!--[if lt IE 9]>
 		<script src="js/IE9.js"></script>
+		<script src="js/PIE.js"></script>
 	<![endif]-->
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body class="font-song">
 	<?php
@@ -54,14 +55,20 @@
 			}
 			$currentColumn++;
 		};
-		$content .= '<td colspan="2" class="wrapper" id="more">';
-		$content .= 		'<a><p>2013年度浙江大学“青年岗位能手”名单</p></a>';
-		$content .=			'<table id="add"><tr><td>尤淑君</td><td>李&nbsp;&nbsp;&nbsp;&nbsp;航</td><td>李红涛</td><td>兰荣杰</td><td>谭&nbsp;&nbsp;&nbsp;&nbsp;荣</td><td>潘恩荣</td></tr><tr><td>宁凡龙</td><td>汤&nbsp;&nbsp;&nbsp;&nbsp;珂</td><td>黄晓艳</td><td>李庆华</td><td>王宏涛</td></tr><tr><td>仝维鋆</td><td>钟财军</td><td>毛旭明</td><td>于&nbsp;&nbsp;&nbsp;&nbsp;勇</td><td>何&nbsp;&nbsp;&nbsp;&nbsp;艳</td><tr></tr><td>李&nbsp;&nbsp;&nbsp;&nbsp;斌</td><td>丁&nbsp;&nbsp;&nbsp;&nbsp;玲</td><td>张&nbsp;&nbsp;&nbsp;&nbsp;慧</td><td>邵&nbsp;&nbsp;&nbsp;&nbsp;頔</td><td>牟星亮</td></tr><tr><td>何水平</td><td>杨利军</td><td>杨&nbsp;&nbsp;&nbsp;&nbsp;超</td><td>陈&nbsp;&nbsp;&nbsp;&nbsp;娇</td><td>徐&nbsp;&nbsp;&nbsp;&nbsp;文</td></tr><tr><td>边&nbsp;&nbsp;&nbsp;&nbsp;莉</td><td>陈大进</td><td>田燕萍</td><td>姚&nbsp;&nbsp;&nbsp;&nbsp;丹</td><td>倪&nbsp;&nbsp;&nbsp;&nbsp;红</td></tr></table>';
-		$content .= 		'<a href="http://zupo.zju.edu.cn/redir.php?catalog_id=32186&object_id=2370890"><div id="imgWrapper"><img src="img/right.png"></div></a>';
+		$content .= '<td colspan="2" class="wrapper" id="more">
+						<p>2013年度浙江大学“青年岗位能手”名单</p>
+						<table id="namelist">
+							<tr><td>尤淑君</td><td>李&nbsp;&nbsp;&nbsp;&nbsp;航</td><td>李红涛</td><td>兰荣杰</td><td>谭&nbsp;&nbsp;&nbsp;&nbsp;荣</td><td>潘恩荣</td></tr>
+							<tr><td>宁凡龙</td><td>汤&nbsp;&nbsp;&nbsp;&nbsp;珂</td><td>黄晓艳</td><td>李庆华</td><td>王宏涛</td></tr><tr><td>仝维鋆</td><td>钟财军</td><td>毛旭明</td><td>于&nbsp;&nbsp;&nbsp;&nbsp;勇</td><td>何&nbsp;&nbsp;&nbsp;&nbsp;艳</td></tr>
+							<tr><td>李&nbsp;&nbsp;&nbsp;&nbsp;斌</td><td>丁&nbsp;&nbsp;&nbsp;&nbsp;玲</td><td>张&nbsp;&nbsp;&nbsp;&nbsp;慧</td><td>邵&nbsp;&nbsp;&nbsp;&nbsp;頔</td><td>牟星亮</td></tr>
+							<tr><td>何水平</td><td>杨利军</td><td>杨&nbsp;&nbsp;&nbsp;&nbsp;超</td><td>陈&nbsp;&nbsp;&nbsp;&nbsp;娇</td><td>徐&nbsp;&nbsp;&nbsp;&nbsp;文</td></tr>
+							<tr><td>边&nbsp;&nbsp;&nbsp;&nbsp;莉</td><td>陈大进</td><td>田燕萍</td><td>姚&nbsp;&nbsp;&nbsp;&nbsp;丹</td><td>倪&nbsp;&nbsp;&nbsp;&nbsp;红</td><td></tr>							
+						</table>
+						<a href="http://zupo.zju.edu.cn/redir.php?catalog_id=32186&object_id=2370890"><img id="readmore" src="img/right.png"></a>';
 		$content .= '</td>';
 		$content .= '</tr>';
 		echo($content);
-	?>	
+	?>
 	</table>
 
 	<div class="intro" id="downIntro">
@@ -75,5 +82,7 @@
 <?php
 	require('php/footer.php');
 ?>
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

@@ -4,12 +4,13 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
 	<title>2013年度浙江大学青年岗位能手风采展示</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-	<link rel="stylesheet" href="css/style.css">
 	<!--[if lt IE 9]>
 		<script src="js/IE9.js"></script>
+		<script src="js/PIE.js"></script>
 	<![endif]-->
+	<link rel="stylesheet" href="css/style.css">
 </head>
-<body class="font-hei">
+<body class="font-hei" onload="winnerListControl()">
 	<?php
 		require('php/banner.php');
 	?>

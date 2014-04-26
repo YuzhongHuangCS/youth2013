@@ -4,38 +4,38 @@
 .font-fang-song{font-family:Baskerville, "Times New Roman", "Liberation Serif", STFangsong, FangSong, FangSong_GB2312, CWTEX\-F, serif}
 .font-ming{font-family:Georgia, "Nimbus Roman No9 L", "AR PL UMing CN", "AR PL UMing HK", "AR PL UMing TW", "AR PL UMing TW MBE", PMingLiU, MingLiU, serif}
 body{background-color:#f8f8f8}
-#nav{background-color:#fff;opacity:.5;width:100%;height:2.4rem;position:absolute}#nav a{color:#000}
-#nav #link{font-size:1rem;line-height:2.5rem;margin-left:12%;text-decoration:none}
-#banner{width:100%;min-height:10rem;box-shadow:1px 1px 3px rgba(0,0,0,0.15)}
-.intro{margin:1.2rem auto;padding:1rem;width:80%;font-size:1rem;line-height:1.5rem;text-indent:2rem;background-color:#fff;box-shadow:1px 1px 3px rgba(0,0,0,0.15)}.intro .introWrapper{margin:0 1rem}
-.intro .introTitle{margin:0;font-size:1.5rem;font-weight:bolder;text-indent:0}
-#gallery{display:block;margin:1.5rem auto;padding:1rem;width:80%;background-color:#fff;box-shadow:1px 1px 3px rgba(0,0,0,0.15)}#gallery .wrapper{padding:0 1rem;width:33%;transition:box-shadow .6s}#gallery .wrapper:hover{box-shadow:0 0 12px rgba(0,0,0,0.2)}
-#gallery .wrapper .title{padding-left:.3rem;color:#6d1025;font-weight:bold;border-left:3px solid #6d1025;transition:border-left .5s}#gallery .wrapper .title:hover{border-left:3px solid #ba002c}
-#gallery .wrapper .title p{margin:.5rem 0}#gallery .wrapper .title p:last-child{text-align:right;font-size:.9rem}
+#nav{background-color:#fff;opacity:.5;width:100%;height:2.5em;position:absolute}#nav a{color:#000}
+#nav #link{font-size:1em;line-height:2.5em;margin-left:12%;text-decoration:none}
+#banner{width:100%;min-height:10em;box-shadow:1px 1px 3px rgba(0,0,0,0.15)}
+.intro{margin:1.2em auto;padding:1em;width:80%;font-size:1em;line-height:1.5em;text-indent:2em;background-color:#fff;box-shadow:1px 1px 3px rgba(0,0,0,0.15)}.intro .introWrapper{margin:0 1em}
+.intro .introTitle{margin:0;font-size:1.5em;font-weight:bolder;text-indent:0}
+#gallery{display:block;margin:1.5em auto;padding:1em;width:80%;background-color:#fff;box-shadow:1px 1px 3px rgba(0,0,0,0.15)}#gallery .wrapper{padding:0 1em;width:33%;transition:box-shadow .6s}#gallery .wrapper:hover{box-shadow:0 0 12px rgba(0,0,0,0.2)}
+#gallery .wrapper .title{padding-left:.3em;color:#6d1025;font-weight:bold;border-left:3px solid #6d1025;transition:border-left .5s}#gallery .wrapper .title:hover{border-left:3px solid #ba002c}
+#gallery .wrapper .title p{margin:.5em 0}#gallery .wrapper .title p:last-child{text-align:right;font-size:.9em}
 #gallery .wrapper .title a{color:#6d1025;text-decoration:none;transition:color .5s}#gallery .wrapper .title a:hover{color:#a61033}
 #gallery .wrapper img{width:100%;transition:opacity .5s}#gallery .wrapper img:hover{opacity:.8}
-#gallery .wrapper .summary{color:#333;font-size:.8rem;line-height:1.2rem;text-indent:1.6rem;transition:color .5s}#gallery .wrapper .summary:hover{color:#000}
+#gallery .wrapper .summary{color:#333;font-size:.8em;line-height:1.5em;text-indent:1.6em;transition:color .5s}#gallery .wrapper .summary:hover{color:#000}
 #gallery .wrapper .videoLink{color:#6d1025;font-weight:bold;text-decoration:none}
-#more{text-align:center}#more a{text-decoration:none}#more a p{margin:0 0 1.5rem;font-size:1.8rem;color:#6d1025}
-#more td{padding:.2rem 0}
-#more #add{margin:0 auto;padding-left:2.2rem;width:90%;text-align:left}
-#more #imgWrapper{float:right;margin-top:-3.4rem;margin-right:5.7rem;width:3rem}
-#footer{margin:3rem auto 1.5rem;padding:0 2rem;font-size:.9rem;line-height:.9rem;text-align:center}
-#detail{margin:2rem auto}
-#winnerList{display:inline-block;vertical-align:top;margin-left:8%;width:24%;background-color:#fff;box-shadow:1px 1px 3px rgba(0,0,0,0.15)}#winnerList #title{margin:0;padding:1rem;color:#6d1025;background-color:#ffda8c;font-size:1.3rem;border-bottom:1px solid #ddd}
+#more{text-align:center}#more p{margin:0 0 1.5em;font-size:1.8em;color:#6d1025}
+#more td{padding:.2em 0}
+#more #namelist{margin:0 auto;padding-left:2.2em;width:90%;text-align:left}
+#more #readmore{float:right;margin-right:13%;margin-top:-7%;width:3em}
+#footer{margin:3em auto 1.5em;padding:0 2em;font-size:.9em;line-height:.9em;text-align:center}
+#detail{margin:2em auto}
+#winnerList{display:inline-block;vertical-align:top;margin-left:8%;width:24%;background-color:#fff;box-shadow:1px 1px 3px rgba(0,0,0,0.15)}#winnerList #title{margin:0;padding:1em;color:#6d1025;background-color:#ffda8c;font-size:1.4em;border-bottom:1px solid #ddd}
 #winnerList #side{position:absolute;width:10px;margin-left:-10px;background-color:#ffda8c;transition:all .5s;display:none}
 #winnerList a{text-decoration:none}
 #winnerList ul{list-style:none;margin:0;padding:0}
-#winnerList li{margin:0;padding:.5rem 1rem;border-bottom:1px solid #ddd;transition:all .5s}#winnerList li p{margin:.5rem 0 0;color:#444}
-#winnerList li p:last-child{text-align:right;font-size:.9rem}
+#winnerList li{margin:0;padding:.5em 1em;border-bottom:1px solid #ddd;transition:all .5s}#winnerList li p{margin:.5em 0 0;color:#444}
+#winnerList li p:last-child{text-align:right;font-size:.9em}
 #winnerList li:hover{background-color:#f8f8f8;color:#cd8c00}
-#detailBody{vertical-align:top;display:inline-block;width:55%;margin-left:2%;padding:2rem;background-color:#fff;box-shadow:1px 1px 3px rgba(0,0,0,0.15);line-height:1.5rem}#detailBody img.album{margin-top:1rem;width:100%}
-#detailBody .title{font-size:2rem;text-align:center;margin:1rem}
-#detailBody .subtitle{font-size:1rem;text-align:right}
-#detailBody .left{font-size:1.2rem;font-weight:bolder}
-#detailBody .middleBold{margin-top:3rem;text-align:center;font-size:1.2rem;font-weight:bold}
-#detailBody .middle{text-indent:2rem}
-#detailBody .right{margin-top:3rem;text-align:right;margin-bottom:0}
+#detailBody{vertical-align:top;display:inline-block;width:55%;margin-left:2%;padding:2em;background-color:#fff;box-shadow:1px 1px 3px rgba(0,0,0,0.15);line-height:1.5em}#detailBody img.album{margin-top:1em;width:100%}
+#detailBody .title{font-size:2em;text-align:center;margin:1em}
+#detailBody .subtitle{font-size:1em;text-align:right}
+#detailBody .left{font-size:1.2em;font-weight:bolder}
+#detailBody .middleBold{margin-top:3em;text-align:center;font-size:1.2em;font-weight:bold}
+#detailBody .middle{text-indent:2em}
+#detailBody .right{margin-top:3em;margin-bottom:0;text-align:right}
 #jwvideo{margin:0 auto;width:100%}
 html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
 body{margin:0}
@@ -75,5 +75,5 @@ fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}
 legend{border:0;padding:0;}
 textarea{overflow:auto}
 optgroup{font-weight:bold}
-table{border-collapse:collapse;border-spacing:0;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}
+table{border-spacing:0;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}
 td,th{padding:0}
